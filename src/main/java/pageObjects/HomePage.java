@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class HomePage {
     public PageURLs pageKey = PageURLs.HOME_PAGE;
     public static final WebDriver driver = new ChromeDriver();
-    String URL = pageKey.getPageURL();
+    String pageRelativeURL = pageKey.getPageURL();
+    String URL = pageRelativeURL;
 
     public HomePage() {
 
