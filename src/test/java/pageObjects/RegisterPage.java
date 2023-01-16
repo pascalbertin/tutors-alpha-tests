@@ -16,14 +16,14 @@ public class RegisterPage extends HomePage {
             String email,
             String password)
     {
-        HomePage.driver.findElement(userNameInput).sendKeys(userName);
-        HomePage.driver.findElement(emailInput).sendKeys(email);
-        HomePage.driver.findElement(passwordInput).sendKeys(password);
-        HomePage.driver.findElement(passwordRepeatInput).sendKeys(password);
-        HomePage.driver.findElement(rulesCheckbox).click();
+        driver.findElement(userNameInput).sendKeys(userName);
+        driver.findElement(emailInput).sendKeys(email);
+        driver.findElement(passwordInput).sendKeys(password);
+        driver.findElement(passwordRepeatInput).sendKeys(password);
+        driver.findElement(rulesCheckbox).click();
     }
 
     public void clickRegistrationButton() {
-        HomePage.driver.findElement(submitButton).click();
+        driver.findElement(submitButton).click();
     }
 }

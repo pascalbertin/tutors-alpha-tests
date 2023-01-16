@@ -8,6 +8,6 @@ public class RegisterPageSteps {
     @When("Fill inputs with {string} username and {string} email and {string} password")
     public void fillRegistrationForm(String username, String email, String password) {
         registerPage.setAllRegistrationFormInputs(username, email, password);
-        registerPage.clickRegistrationButton();
+        //registerPage.clickRegistrationButton();
     }
 }

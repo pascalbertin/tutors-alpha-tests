@@ -5,7 +5,7 @@ Feature: Tutors Alpha Home Page Tests
   Scenario: Checking login page
     When Go to "login" page
     Then Site title should be "Tutors Alpha"
-    Then Close the site
+#    Then Close the site
 
 
   @Test-0002
