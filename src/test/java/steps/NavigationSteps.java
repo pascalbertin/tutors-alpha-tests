@@ -1,15 +1,24 @@
 package steps;
 
-import io.cucumber.java.en.When;
-import pageObjects.HomePage;
+import general.PageURLs;
+import io.cucumber.java.en.Given;
+import pageObjects.BasePage;
 
 public class NavigationSteps {
-    HomePage homePage = new HomePage();
+    BasePage basePage = new BasePage();
+    PageURLs pageKey;
 
     public NavigationSteps() {}
-    @When("Go to {string} page")
+    @Given("Go to {string} page")
     public void userNavigateToSite(String siteURL) {
-        homePage.setURL(homePage.getURL() + siteURL);
-        homePage.navigate();
+        basePage.init();
+        switch (siteURL) {
+            case "register" -> pageKey = PageURLs.REGISTER_PAGE;
+            case "login" -> pageKey = PageURLs.LOGIN_PAGE;
+            case "categories" -> pageKey = PageURLs.CATEGORIES_PAGE;
+        }
+
+        basePage.setURL(basePage.getURL() + pageKey.getPageURL());
+        basePage.navigate();
     }
 }

@@ -3,7 +3,8 @@ package general;
 public enum PageURLs {
     HOME_PAGE("https://tutorsalpha.herokuapp.com/"),
     LOGIN_PAGE("login/"),
-    REGISTER_PAGE("register/");
+    REGISTER_PAGE("register/"),
+    CATEGORIES_PAGE("categories/");
 
     String pageURL;
 

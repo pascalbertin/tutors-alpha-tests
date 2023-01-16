@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:features/FeaturesFile.feature"
+        features = "classpath:features/TA-76_Registration_test_set.feature"
         ,glue = {"steps"}
 )
 
-public class LoginPageRunner {
+public class RegisterTestSetRunner {
 }
