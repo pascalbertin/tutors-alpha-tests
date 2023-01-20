@@ -6,3 +6,4 @@ Feature: TA-76: Registration- test set (TA-76)
     Given Go to "register" page
     When Fill register inputs with "testtest" username and "testtest@test.pl" email and "password" password
     Then User receives duplicated username message
+    Then Close the site
