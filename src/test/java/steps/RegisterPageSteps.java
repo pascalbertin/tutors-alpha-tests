@@ -22,7 +22,7 @@ public class RegisterPageSteps {
         Messages msg = Messages.REGISTER_USER_DUPLICATED;
         boolean ifContains = registerPage.getConfirmationMessageAfterRegistration().contains(msg.getMessage());
         Assert.assertTrue(ifContains);
-        registerPage.cleanDriver();
+        //registerPage.cleanDriver();
     }
 
 }

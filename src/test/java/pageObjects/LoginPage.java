@@ -24,7 +24,8 @@ public class LoginPage extends HomePage {
         driver.findElement(submitLoginButton).click();
     }
 
-    public String getConfirmationMessageAfterLogin() {
+    public String getConfirmationMessageAfterLogin() throws InterruptedException {
+        Thread.sleep(1000);
         return driver.findElement(confirmationLoginMessage).getText();
     }
 }
